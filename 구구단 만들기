@@ -1,0 +1,44 @@
+package jun_2023;
+
+import java.util.Scanner;
+
+public class Gugudan0425 {
+
+	public static void main(String[] args) {
+        // 구구단 만들기
+    Scanner sc = new Scanner(System.in);
+	System.out.println("몇단 보고 싶은데?");
+	
+	int 몇단 = sc.nextInt();
+    
+//	System.out.println(몇단+"* 1 ="+(몇단*1));
+//	System.out.println(몇단+"* 2 ="+(몇단*2));
+//	System.out.println(몇단+"* 3 ="+(몇단*3));
+//	System.out.println(몇단+"* 4 ="+(몇단*4));
+//	System.out.println(몇단+"* 5 ="+(몇단*5));
+//	System.out.println(몇단+"* 6 ="+(몇단*6));
+//	System.out.println(몇단+"* 7 ="+(몇단*7));
+//	System.out.println(몇단+"* 8 ="+(몇단*8));
+//	System.out.println(몇단+"* 9 ="+(몇단*9));
+	
+	
+	
+	int 곱 = 1;
+	while(곱<=9) {
+//          조건이 참인동안 실핼한 문장
+//      System.out.println(몇단+"* 1~9 ="+(몇단*1~9));
+//		System.out.println("%d" * %d" = %d, 몇단, 곱, 몇단*곱);
+		System.out.println(몇단+"*"+ 곱 +"="+(몇단*곱));
+        곱++;
+	}
+	
+for(int 포곱=1; 포곱<=9; 포곱++) { 
+System.out.println(몇단+" * "+포곱+" = "+(몇단*포곱));
+}
+
+	
+	
+	
+	}
+
+}
