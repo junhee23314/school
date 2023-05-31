@@ -1,0 +1,19 @@
+#재미있는 up & down 게임
+
+import random
+rn=random.randrange(1, 101,1)
+t_cnt = 0
+
+while (rn != num):
+  
+  num = int(input('숫자입력하세요:  '))
+ 
+  if (num > rn):
+    print('down')
+ 
+  elif (num < rn):
+    print('up')
+    
+  t_cnt += 1
+print("------------------------------")
+print(t_cnt, "번 만에 정답")
