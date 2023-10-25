@@ -1,0 +1,69 @@
+from turtle import *
+left(0)
+forward(60)
+left(265)
+forward(60)
+left(10)
+forward(10)
+
+forward(60)
+left(90)
+forward(60)
+left(90)
+forward(60)
+left(90)
+forward(60)
+left(90)
+forward(60)
+
+left(90)
+forward(60)
+left(90)
+forward(150)
+
+left(275)
+forward(60)
+left(255)
+forward(60)
+left(180)
+forward(60)
+left(230)
+forward(60)
+left(260)
+forward(60)
+left(180)
+forward(30)
+left(280)
+forward(30)
+left(300)
+forward(10)
+left(60)
+forward(60)
+left(100)
+forward(180)
+
+
+left(80)
+forward(60)
+left(90)
+forward(60)
+
+
+
+
+
+import turtle
+
+
+
+# # 원을 그리는 반복문
+# for i in range(360):
+#     forward(1)
+#     left(1)          # 1도 왼쪽으로 회전
+#
+# forward(60)
+#
+# left(0)
+# # 그리기 완료 후 화면 유지
+# turtle.done()
+
