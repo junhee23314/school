@@ -162,3 +162,15 @@ Context switch overhead가 큼
 	Time-sharing system, real-time system 등에 적합
 
 ```
+###### Priority 프로세스의 중요도
+```
+Static priority(정적 우선순위) (도장)
+	프로세스 생성시 결정된 priority가 유지됨
+	장 - 구현이 쉽고, overhead가 적음
+	단 - 시스템 환경 변화에 대한 대응이 어려움
+
+Dynamic priority(동적 우선순위) (연필과 지우개)
+	프로세스의 상태 변화에 따라 priority 변경
+	단 - 구현이 복잡, priority 재계산 overhead가 큼
+	장 - 시스템 환경 변화에 유연한 대응 가능
+```
