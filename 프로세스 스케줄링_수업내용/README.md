@@ -174,7 +174,7 @@ Dynamic priority(동적 우선순위) (연필과 지우개)
 	단 - 구현이 복잡, priority 재계산 overhead가 큼
 	장 - 시스템 환경 변화에 유연한 대응 가능
 ```
-###### **FCFS (Frist-Come-First-Service)**
+###### *FCFS (Frist-Come-First-Service)*
 ```
 Non-preemptive scheduling
 스케줄링 기준(Criteria)
@@ -194,7 +194,7 @@ Batch system에 적합, interactive system에 부적합
 	- 긴 평균 응답시간(response time) 
 
 ```
-###### **RR (Round-Robin)**
+###### *RR (Round-Robin)*
 ```
 * preemptive scheduling
 * 스케줄링 기준(Criteria)	
