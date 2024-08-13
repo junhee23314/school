@@ -23,14 +23,14 @@
 
 기본 스케줄링 알고리즘
 
-┌
+```┌
    * FCFS (First-Come-First-Service)         Fairness
-   * RR (Round-Robin)				┘  (공평성)
+   * RR (Round-Robin)				┘```  (공평성)
 
-┌
+```┌
    * SPN (Shortest-Process-Next)
    * SRTN (Shortest Remaining Time Next)   	Efficieney/Performance
-   * HRRN (High-Response-Ratio-Next)   ┘	(효율성, 성능)
+   * HRRN (High-Response-Ratio-Next)   ┘ ```	(효율성, 성능)
 								
 	* MLQ(Multi-level Queue)
 	* MFQ (Multi-level Feedback Queue)
