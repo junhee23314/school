@@ -174,3 +174,49 @@ Dynamic priority(동적 우선순위) (연필과 지우개)
 	단 - 구현이 복잡, priority 재계산 overhead가 큼
 	장 - 시스템 환경 변화에 유연한 대응 가능
 ```
+###### **FCFS (Frist-Come-First-Service)**
+```
+Non-preemptive scheduling
+스케줄링 기준(Criteria)
+	도착 시간(ready queue 기준)
+	먼저 도착한 프로세스를 먼저 처리
+
+자원을 효율적으로 사용 가능
+	- high resource utilization / why?
+Batch system에 적합, interactive system에 부적합
+장점 
+	- 간단(구현)
+단점
+	- Convoy effect
+		하나의 수행시간이 긴 프로세스에 의해
+		다른 프로세스들이 긴 대기시간을 갖게
+		되는 현상(대기시간>>실행시간)
+	- 긴 평균 응답시간(response time) 
+
+```
+###### **RR (Round-Robin)**
+```
+* preemptive scheduling
+* 스케줄링 기준(Criteria)	
+	- 도착 시간 (ready queue 기준)
+	- 먼저 도착한 프로세스를 먼저 처리
+* 자원 사용 제한 시간(time quantum)이 있음
+
+	- System parameter
+	- 프로세스는 할당된 시간이 지나면 자원 반납
+		- Timer-runout
+	- 특정 프로세스의 자원 독점(monopoly) 방지
+	- Context switch overhead가 큼
+* 대화형, 시분할 시스템에 적합
+
+
+* Time quantum이 시스템 
+  성능을 결정하는 핵심요소
+
+	- Very large (infinite) δ → FCFS
+	- Very small time quantum → processor sharing
+		- 사용자는 모든 프로세스가 각각의 프로세스 위에서
+		  실행되는 것처럼 느낌
+			- 체감 프로세서 속도 = 실제 프로세서 성능의 1/n
+		- High context switch overhead
+```
