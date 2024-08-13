@@ -20,7 +20,16 @@
 ![수업내용문제](https://github.com/junhee23314/school/blob/main/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81_%EC%88%98%EC%97%85%EB%82%B4%EC%9A%A9/img/2024-0812_%EC%88%98%EC%97%85%EB%82%B4%EC%9A%A9%EB%AC%B8%EC%A0%9C.png)
 
 문제는 보시다시피 가장 효율적인 프로세스 스케줄링을 순서대로 나열하는 것이다.
+
 일단 먼저 "FCFS"를 보자면
+
+##### [FCFS]
+![스케줄링문제풀이(FCFS)](https://github.com/junhee23314/school/blob/main/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81_%EC%88%98%EC%97%85%EB%82%B4%EC%9A%A9/img/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4(FCFS).jpg)
+
+
+##### [TQ]
+![스케줄링문제풀이(tq1)](https://github.com/junhee23314/school/blob/main/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81_%EC%88%98%EC%97%85%EB%82%B4%EC%9A%A9/img/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4(tq1).jpg)
+
 
 #### 08/13 수업
 
