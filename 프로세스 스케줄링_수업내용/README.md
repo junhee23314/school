@@ -19,11 +19,11 @@
 
 스케줄링 기법이 고려하는 항목들
 
-● 프로세스(process)의 특성 
-● 시스템 특성 ->목적
-● 프로세스의 긴급성(urgency) ->기준
-● 프로세스 우선순위(priority)
-● 프로세스 총 실행시간(total service time)
+● 프로세스(process)의 특성 <br>
+● 시스템 특성 -> 목적 <br>
+● 프로세스의 긴급성(urgency) -> 기준 <br>
+● 프로세스 우선순위(priority) <br>
+● 프로세스 총 실행시간(total service time) <br>
 ● ...
 
 
