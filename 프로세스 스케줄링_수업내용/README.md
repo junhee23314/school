@@ -100,9 +100,8 @@ tq:3의 평균응답시간은 ` 27 / 5 `이라고 구해볼수있다.
 
 
 #### 08/13 수업
+###### 기본 스케줄링 알고리즘
 ```
-기본 스케줄링 알고리즘
-
 ┌
    * FCFS (First-Come-First-Service)             Fairness
    * RR (Round-Robin)			┘  	  (공평성)
@@ -133,4 +132,23 @@ MLQ(Multi-level Queue)
   * 여러 개의 Queue 관리 등 스케쥴링 overhead
   
   * 우선순위가 낮은 queue는 starvation 현상 발생 가능
+```
+###### Preemptive/Non-preemptive scheduling
+```
+Non-preemptive scheduling(화장실)
+	
+ 	할당받을 자원을 스스로 반납할 때까지 사용
+		예) system call,I/O,Etc
+	
+	장점 - Context switch overhead가 적음
+	단점 - 잦은 우선순위 역전, 평균 응답 시간 증가
+
+Preemptive scheduling(응급실)
+	
+	타의에 의해 자원을 빼앗길 수 있음
+		예) 할당 시간 종료, 우선순위가 높은 프로세스 등장
+	
+Context switch overhead가 큼
+	Time-sharing system, real-time system 등에 적합
+
 ```
