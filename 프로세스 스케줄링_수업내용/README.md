@@ -123,25 +123,6 @@ tq:3의 평균응답시간은 ` 27 / 5 `이라고 구해볼수있다.
 								
 * MLQ(Multi-level Queue)
 * MFQ (Multi-level Feedback Queue)
-
-
-MLQ(Multi-level Queue)
-
-* 작업(or 우선순위) 별 별도의 ready queue를 가짐
-	
-	1)최초 배정 된 queue를 벗어나지 못함
-
-  	2)각각의 queue는 자신만의 스케쥴링 기법 사용
-
-* Queue 사이에는 우선순위 기반의 스케줄링 사용
-
-[장점]
-  * 빠른 응답시간(?)
-
-[단점]
-  * 여러 개의 Queue 관리 등 스케쥴링 overhead
-  
-  * 우선순위가 낮은 queue는 starvation 현상 발생 가능
 ```
 ###### MLQ(Multi-level Queue)
 ```
