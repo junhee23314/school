@@ -25,7 +25,7 @@
 ● ...
 
 
-### 08/12 수업
+### FCFS, TQ (time quantum)
 ![수업내용문제](https://github.com/junhee23314/school/blob/main/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81_%EC%88%98%EC%97%85%EB%82%B4%EC%9A%A9/img/2024-0812_%EC%88%98%EC%97%85%EB%82%B4%EC%9A%A9%EB%AC%B8%EC%A0%9C.png)
 
 문제는 보시다시피 가장 효율적인 프로세스 스케줄링을 순서대로 나열하는 것이다.
