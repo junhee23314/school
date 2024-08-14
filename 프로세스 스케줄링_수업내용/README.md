@@ -38,8 +38,6 @@
 ![스케줄링문제풀이(FCFS)](https://github.com/junhee23314/school/blob/main/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81_%EC%88%98%EC%97%85%EB%82%B4%EC%9A%A9/img/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4(FCFS).jpg)
 
 ```
-위 사진과 같이 풀이를 정리 해보면
-
 1. 대기시간 (Waiting Time)
 
 p1: 0
@@ -71,8 +69,6 @@ p5: 8
 ![스케줄링문제풀이(tq1)](https://github.com/junhee23314/school/blob/main/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81_%EC%88%98%EC%97%85%EB%82%B4%EC%9A%A9/img/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4(tq1).jpg)
 
 ```
-위 사진과 같이 풀이를 정리 해보면
-
 1. 대기시간 (Waiting Time)
 
 p1: 0
