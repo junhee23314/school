@@ -145,7 +145,6 @@ submit 버튼을 클릭하여 회원 정보를 데이터베이스에 저장하�
 ![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%ED%9A%8C%EC%9B%90%EB%93%B1%EB%A1%9D%20%EC%A0%84.png)
 
 
-[]([https://github.com/user-attachments/assets/3b6972f9-050c-4bb6-bb60-df25b37c4212](https://private-user-images.githubusercontent.com/127848243/361250048-3b6972f9-050c-4bb6-bb60-df25b37c4212.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQ2MDk2MzIsIm5iZiI6MTcyNDYwOTMzMiwicGF0aCI6Ii8xMjc4NDgyNDMvMzYxMjUwMDQ4LTNiNjk3MmY5LTA1MGMtNGJiNi1iYjYwLWRmMjViMzdjNDIxMi5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgyNVQxODA4NTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYTYwNDU2OTJhOTk4MmJkOTQyOWM2OTZmYjFjYTZjYTg3ZDgxOGExYWZmYzcwMWQyZDQ2MzQ1YTM0NThiNTgwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RvvOf8JrUTf_p4Q1n__JBhMFnXm5u9Uq-FcNqU0OMxY))
-
+[](https://github.com/user-attachments/assets/1031965f-0b13-4a91-abfd-0f60430b5b76)
 
 
