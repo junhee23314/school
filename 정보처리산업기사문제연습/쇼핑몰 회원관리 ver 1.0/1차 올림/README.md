@@ -43,7 +43,8 @@ public class DBConnect {
 
 JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했습니다. 예를 들어, 회원 성명, 전화번호 등이 입력되지 않으면 알림 메시지를 띄웁니다.
 
-![미입력 등록](https://github.com/user-attachments/assets/b2ed1da7-e087-4773-94df-db19d430a98a)
+[](https://github.com/user-attachments/assets/10bc949d-c4e1-439f-8390-6ba9b89c00f8)
+
 submit 버튼을 클릭하여 회원 정보를 데이터베이스에 저장하는 다음 페이지(join_p.jsp)로 전송하는 형식입니다.
 
 ##### ---join_p.jsp---
