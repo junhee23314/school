@@ -61,7 +61,7 @@ ResultSet 객체는 쿼리 결과를 반환하며, 이 경우 가장 큰 회원 
         int num = rs.getInt(1) + 1; //num에는 오라클 member 테이블의 마지막 회원번호 + 1 값이 정수로 저장
  %>
 ```
-![미입력 알림림]([https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%ED%9A%8C%EC%9B%90%EB%93%B1%EB%A1%9D%20%ED%99%94%EB%A9%B4.png](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%EB%AF%B8%EC%9E%85%EB%A0%A5%20%ED%99%95%EC%9D%B8.gif))
+![미입력 확인](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%EB%AF%B8%EC%9E%85%EB%A0%A5%20%ED%99%95%EC%9D%B8.gif)
 
 JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했습니다. 예를 들어, 회원 성명, 전화번호 등이 입력되지 않으면 알림 메시지를 띄웁니다.
 ```
@@ -82,8 +82,42 @@ JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했�
 						data.address.focus();
 						return false;
 					} 
-			튼]([https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%ED%9A%8C%EC%9B%90%EB%93%B1%EB%A1%9D%20%ED%99%94%EB%A9%B4.png](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%EB%AF%B8%EC%9E%85%EB%A0%A5%20%ED%99%95%EC%9D%B8.gif))
+                                                   <!--생략-->
+```
+
+
+```
+<section class="section">
+   	 <h2>홈쇼핑 회원 등록</h2><br>
+
+<form name="data" action="join_p.jsp" method="post"  onsubmit="return checkValue()">
+			<table class="table_line">
+				<tr>
+					<th>회원번호(자동발생)</th>
+					<td><input type="text" name="custno" value="<%=num %>"  readonly ></td>
+				</tr>
+				<tr>
+					<th>회원성명</th>
+					<td><input type="text" name="custname" ></td>
+				</tr>
+				<!--생략-->
+				<tr class="center">
+					<td  colspan="2" >
+						<input type="submit" value="등록">
+						<input type="button" value="취소"  onclick = "location.href='join.jsp'  "> 
+						<!-- "location.href=는 현재 브라우저에 연결페이지 로딩 -->
+						<input type="button" value="조회"  onclick = "location.href='member_list.jsp'  " >
+				</tr>
+			</table>
+		</form>	
+   	
+ </section>
+```
+
+![취소버튼](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%EC%B7%A8%EC%86%8C%EB%B2%84%ED%8A%BC.gif)
+
 **`취소`버튼을 누르면 전체 초기화**
+
 ### ---join_p.jsp---
 실제로 데이터베이스에 회원 정보를 삽입하는 코드입니다. insert 쿼리를 사용하여 데이터베이스에 회원 정보를 저장합니다.
 요청(request)으로 받은 데이터를 파라미터로 받아와서 해당 값을 데이터베이스에 입력합니다.
