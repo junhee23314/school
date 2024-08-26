@@ -65,7 +65,7 @@ ResultSet 객체는 쿼리 결과를 반환하며, 이 경우 가장 큰 회원 
 
 JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했습니다. 예를 들어, 회원 성명, 전화번호 등이 입력되지 않으면 알림 메시지를 띄웁니다.
 ```
-<!--유효성 검사-->
+<!--유효성 검사코드-->
 <script type = "text/javascript">
 	function checkValue(){
 					if(!document.data.custname.value) {
