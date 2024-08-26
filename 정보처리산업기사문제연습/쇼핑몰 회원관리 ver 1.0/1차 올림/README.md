@@ -103,7 +103,22 @@ JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했�
 		}
 </script>
 ```
+```
+<section class="section">
+   	 <h2>홈쇼핑 회원 등록</h2><br>
 
+<form name="data" action="join_p.jsp" method="post"  onsubmit="return checkValue()">
+			<table class="table_line">
+				<tr>
+					<th>회원번호(자동발생)</th>
+					<td><input type="text" name="custno" value="<%=num %>"  readonly ></td>
+				</tr>
+				<tr>
+					<th>회원성명</th>
+					<td><input type="text" name="custname" ></td>
+				</tr>
+				<!-- 생략 -->
+```
 submit 버튼을 클릭하여 회원 정보를 데이터베이스에 저장하는 다음 페이지(join_p.jsp)로 전송하는 형식입니다.
 
 ### ---join_p.jsp---
