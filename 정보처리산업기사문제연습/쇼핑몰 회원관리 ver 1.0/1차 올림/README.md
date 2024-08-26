@@ -83,7 +83,7 @@ JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했�
 						data.address.focus();
 						return false;
 					} 
-                                                   <!--생략-->
+		 		<!-- ==================== 생략 ==================== -->
 ```
 
 
@@ -101,7 +101,7 @@ JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했�
 					<th>회원성명</th>
 					<td><input type="text" name="custname" ></td>
 				</tr>
-				<!--생략-->
+				<!-- ==================== 생략 ==================== -->
 				<tr class="center">
 					<td  colspan="2" >
 						<input type="submit" value="등록">
