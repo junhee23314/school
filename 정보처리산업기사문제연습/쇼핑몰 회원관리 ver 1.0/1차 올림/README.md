@@ -170,7 +170,7 @@ JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했�
 
 보이는 것 처럼 적었던 회원정보가 들어가 있는걸 볼수있습니다.
 
-###---member_list.jsp---
+### ---member_list.jsp---
 
 SQL 쿼리 실행 및 데이터베이스 연결:
 ![]()
@@ -206,5 +206,42 @@ ResultSet에서 데이터를 가져와 HTML 표에 표시하는 부분이 또 �
 %>
 
 ```
+### ---member_search_list.jsp---
+![]()
 
+데이터베이스에서 조회한 결과(ResultSet)를 HTML 표 형식으로 출력하는 부분입니다. rs.next() 루프를 통해 데이터를 반복적으로 읽어와 각 열에 출력합니다.
+```
+<%
+    if (rs.next()) { 
+%>
+    <section class="section">
+        <table class="table_line">
+            <tr>
+                <th>회원번호</th>
+                <th>회원성명</th>
+                <!--생략-->
+            </tr>
+            <tr>
+                <td><%= rs.getString("custno") %></td>
+                <td><%= rs.getString("custname") %></td>
+                <!--===== 생략 =====-->
+            </tr>
+            <tr>
+                <td colspan="7" align="center">
+                    <input type="button" value="홈으로" onclick="location.href='index.jsp'">
+                </td>
+            </tr>
+        </table>
+    </section>
+<%
+    } else { 
+%>
+    <p align="center">회원번호 <%= in_custno %>의 회원 정보가 없습니다.</p>
+    <p align="center"><input type="button" value="다시조회" onclick="location.href='member_search.jsp'"></p>
+<%
+    } 
+%>
+
+```
+이 부분은 회원 정보를 표 형태로 보여주거나, 회원 정보가 없을 경우 메시지를 출력합니다.
 
