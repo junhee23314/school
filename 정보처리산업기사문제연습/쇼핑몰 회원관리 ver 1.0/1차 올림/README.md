@@ -172,7 +172,7 @@ JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했�
 ---
 
 DBConnect 클래스의 getConnection() 메서드를 사용해 데이터베이스에 연결하고, <br>
-SQL 쿼리를 실행하여 회원 정보를 조회합니다.
+SQL 쿼리를 실행하여 회원 정보를 조회합니다. (member_search_list.jsp, sales_list.jsp 포함)
 ```
 <%
     String sql = "SELECT custno, custname, phone, address, "
