@@ -252,7 +252,7 @@ request.getParameter("in_custno")를 통해 웹 요청에서 고객 번호(in_cu
 
 ![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/100001%20%ED%9A%8C%EC%9B%90.png)
 
-위 보이는 사진처럼 100001인 회원정보가 출력된 걸 볼 수 있다.
+위 보이는 사진처럼 `100001`인 회원정보가 출력된 걸 볼 수 있다.
 
 ### ---sales_list.jsp---
 
