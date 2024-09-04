@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* CSS(Cascading Style Sheet) */
+
+/* 선택자가 중요 */
+
+*{
+    font-family: "굴림";
+    margin: 0 auto;
+}
+
+h1{
+    font-family: "함초롬바탕";
+}
+
+.클래스{
+    font-family: "궁서체";
+}
+
+#아이디{
+    font-family: "바탕체";
+}
+
+img{
+    display: block;
+}
