@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- HTML5 버전이다! -->
+
+<html lang="ko"> <!-- lang이라는 속성은 번역과도 연관이 있다. -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="img/main_img.png" alt="없어요">
+    <!-- img태그 - 경로(src속성)에 있는 이미지를 출력,
+                            alt 속성은 이미지가 없을때 표현할 메세지 -->
+    <ul>
+        <!-- 관리하기 위해 리스트(배열느낌)를 만듦. -->
+        <li>
+            <!-- 리스트의 요소들 -->
+            <a href="#">학교소개 |</a>
+            <!-- a태그 - href 속성을 이용해 링크를 건다. -->
+        </li>
+        <li><a href="#">학과소개 |</a></li>
+        <li><a href="#">입학안내 |</a></li>
+        <li><a href="#">학교생활 |</a></li>
+        <li><a href="#">열린학교</a></li>
+    </ul>
+
+    <h1 class="클래스" id="아이디">
+        <!-- h1-6: 대가리역할, 글씨크고, 글씨진하게, 여백의미  -->
+        <!-- html문서를 열때 h태그부터 탐색함!!(민성) -->
+        + 학교소개
+    </h1>
+
+    <ol>
+        <!-- shift + crtl 누르면 주석안되는거 해결 -->
+        <li>
+            <h3>건학이념</h3>
+            <div>
+                <table>
+                    <tr>
+                        <td>설립자훈</td>
+                        <td>대망과 신념을 지닌 인간상 구현</td>
+                    </tr>
+                    <tr>
+                        <td>교훈</td>
+                        <td>성실한 사람, 실력 있는 사람, 생산적인 사람</td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+
+        <li>
+            <h3 id="아이디">학교상징</h3>
+            <ul class="symbol">
+                <li>교화: 철쭉 - 사랑의 기쁨</li>
+                <li>교목: 은행나무 - 용기, 진취적임, 풍요로운 결실</li>
+                <li>교조: 독수리 - 도전정신</li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>오시는길</h3>
+            <img src="img/map.png" alt="지도가안보여">
+        </li>
+
+    </ol>
+</body>
+
+</html>

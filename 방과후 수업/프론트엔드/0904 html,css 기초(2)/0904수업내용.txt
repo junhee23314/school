@@ -1,0 +1,10 @@
+html , css
+ - 기초 문법
+ - inline, block 차이
+   inline:<img> , <a>,<span>
+   block: <h>,<div>,<p>
+
+- 배치하는법(레이아웃)
+   margin, qpadding 
+- float, position 등
+- 깨지는 거
