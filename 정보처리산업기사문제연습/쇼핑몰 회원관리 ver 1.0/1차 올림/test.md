@@ -182,6 +182,43 @@ JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했�
 
 <details><summary> 회원목록조회/수정
 </summary>
+### ---member_list.jsp---
+
+![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/member_list%20%ED%99%94%EB%A9%B4.png)
+
+---
+
+DBConnect 클래스의 getConnection() 메서드를 사용해 데이터베이스에 연결하고, <br>
+SQL 쿼리를 실행하여 회원 정보를 조회합니다. (member_search_list.jsp, sales_list.jsp 포함)
+```
+<%
+    String sql = "SELECT custno, custname, phone, address, "
+               + "TO_CHAR(joindate, 'YYYY-MM-DD') AS joindate, "
+               + "CASE grade WHEN 'A' THEN 'VIP' WHEN 'B' THEN '일반' ELSE '직원' END AS grade, "
+               + "city FROM member_tbl_02 ORDER BY custno";
+    
+    Connection conn = DBConnect.getConnection();
+    
+    PreparedStatement pstmt = conn.prepareStatement(sql);
+    ResultSet rs = pstmt.executeQuery();
+%>
+```
+ResultSet에서 데이터를 가져와 HTML 표에 표시하는 부분이 또 다른 중요한 부분입니다. while(rs.next()) 루프를 통해 쿼리 결과를 반복하며 각 회원의 정보를 출력합니다.
+
+```
+<%
+    while(rs.next()) {
+%>
+<tr class="center">
+    <td><%= rs.getString("custno") %></td>
+    <td><%= rs.getString("custname") %></td>
+    <!-- ========== 생략 ========== -->
+</tr>
+<%
+    }
+%>
+
+```
 
 update.jsp
 
