@@ -182,6 +182,7 @@ JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했�
 
 <details><summary> 회원목록조회/수정
 </summary>
+
 ### ---member_list.jsp---
 
 ![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/member_list%20%ED%99%94%EB%A9%B4.png)
@@ -255,6 +256,57 @@ SQL 삭제 쿼리: member_tbl_02 테이블에서 특정 회원(custno)의 정보
 <details><summary> 회원정보조회
 </summary>
 
+### ---member_search_list.jsp---
+![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/member_search_list%20%ED%99%94%EB%A9%B4.png)
+
+---
+
+request.getParameter("in_custno")를 통해 웹 요청에서 고객 번호(in_custno)를 가져옵니다.
+```
+ String in_custno = request.getParameter("in_custno");
+```
+데이터베이스에서 조회한 결과(ResultSet)를 HTML 표 형식으로 출력하는 부분입니다. rs.next() 루프를 통해 데이터를 반복적으로 읽어와 각 열에 출력합니다.
+```
+<%
+    if (rs.next()) { 
+%>
+    <section class="section">
+        <table class="table_line">
+            <tr>
+                <th>회원번호</th>
+                <th>회원성명</th>
+                <!--생략-->
+            </tr>
+            <tr>
+                <td><%= rs.getString("custno") %></td>
+                <td><%= rs.getString("custname") %></td>
+                <!--===== 생략 =====-->
+            </tr>
+            <tr>
+                <td colspan="7" align="center">
+                    <input type="button" value="홈으로" onclick="location.href='index.jsp'">
+                </td>
+            </tr>
+        </table>
+    </section>
+<%
+    } else { 
+%>
+    <p align="center">회원번호 <%= in_custno %>의 회원 정보가 없습니다.</p>
+    <p align="center"><input type="button" value="다시조회" onclick="location.href='member_search.jsp'"></p>
+<%
+    } 
+%>
+
+```
+이 부분은 회원 정보를 표 형태로 보여주거나, 회원 정보가 없을 경우 메시지를 출력합니다.
+
+**회원정보조회 성공!**
+![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%ED%9A%8C%EC%9B%90%EC%A1%B0%ED%9A%8C.gif)
+
+![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/100001%20%ED%9A%8C%EC%9B%90.png)
+
+위 보이는 사진처럼 `100001`인 회원정보가 출력된 걸 볼 수 있다.
 
 </details>
 
