@@ -256,24 +256,25 @@ function checkDel(f_custno) {
         location.href = "delete.jsp?d_custno=" + f_custno;
     } else {
         진}
-
+```
 ### ---member_search.jsp---
 
 
 {동영상} <br>
 checkValue2() 자바스크립트 함수는 사용자가 회원 번호를 입력했는지 확인하고, 입력값이 없을 경우 경고 메시지를 표시하며 폼 제출을 막습니다.
+
 ```
-<script type="text/javascript">
-    function checkValue2() {
-        if (!document.data1.in_custno.value) { // 회원 번호 입력값이 없을 경우
-            alert("회원번호를 입력하세요."); // 경고 메시지
-            document.data1.in_custno.focus(); // 입력창으로 포커스 이동
-            return false; // 폼 제출 중단
-        }
-        return true; // 입력값이 있으면 폼 제출 진행
-    }
-</script>
-</head>
+	<script type="text/javascript">
+    	function checkValue2() {
+        	if (!document.data1.in_custno.value) { // 회원 번호 입력값이 없을 경우
+            	alert("회원번호를 입력하세요."); // 경고 메시지
+            	document.data1.in_custno.focus(); // 입력창으로 포커스 이동
+            	return false; // 폼 제출 중단
+       	 }
+        	return true; // 입력값이 있으면 폼 제출 진행
+    	}
+	</script>
+	</head>
 ```
 
 회원 번호가 입력되면, 입력값을 POST 방식으로 `member_search_list.jsp`로 전송합니다.
