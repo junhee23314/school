@@ -38,7 +38,6 @@ public class DBConnect {
 ```
 **DB연결코드**
 
----
 
 ### ---index.jsp---
 
