@@ -38,14 +38,35 @@ public class DBConnect {
 ```
 **DB연결코드**
 
-
 ---
 
+### ---index.jsp---
 
+```
+<body>
+    <header>
+        <jsp:include page="layout/header.jsp"></jsp:include>
+    </header>
+    
+    <nav>
+        <jsp:include page="layout/nav.jsp"></jsp:include>
+    </nav>
+    
+    <section>
+        <jsp:include page="layout/section.jsp"></jsp:include>
+    </section>
+    
+    <footer>
+        <jsp:include page="layout/footer.jsp"></jsp:include>
+    </footer>
+</body>
+</html>
 
+```
+
+JSP 페이지에서 다른 JSP 파일을 포함할 때 사용합니다. 이렇게 하면 공통되는 페이지 요소(헤더, 내비게이션, 섹션, 푸터)를 한 번만 작성한 후 여러 페이지에서 재사용 가능
 
 ---
-
 
 <details><summary> 회원등록
 </summary>
