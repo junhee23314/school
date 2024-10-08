@@ -315,6 +315,36 @@ request.getParameter("in_custno")를 통해 웹 요청에서 고객 번호(in_cu
 <details><summary>회원대출조회
 </summary>
 
+### ---sales_list.jsp---
+
+![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/sales_list%20%ED%99%94%EB%A9%B4.png)
+
+---
+
+while (rs.next()) 루프를 통해 ResultSet에서 각 행의 데이터를 가져와 테이블의 각 행에 출력합니다.<br>
+각 열은 rs.getString() 메서드를 사용하여 고객 번호, 성명, 등급, 매출 가격을 가져옵니다.<br>
+매출 총합을 계산하기 위해 i 변수를 사용합니다. 루프를 돌면서 각 고객의 매출을 i에 더합니다.<br>
+루프가 끝난 후, 총합을 보여주는 행을 추가하여 사용자에게 전체 매출 합계를 제공합니다.<br>
+```
+ <% int i = 0;
+           while (rs.next()) { %>
+        <tr class="center">
+            <td><%= rs.getString("custno") %></td>
+            <td><%= rs.getString("custname") %></td>
+            <td><%= rs.getString("grade") %></td>
+            <td><%= rs.getString("price") %></td>
+        </tr>
+
+        <% i += Integer.parseInt(rs.getString("price"));
+           } %>
+        <tr class="center">
+            <td colspan="3">총합</td>
+            <td><%= i %></td>
+        </tr>
+```
+
+
+
 회원 정보 조회: 데이터베이스에서 회원 번호, 이름, 등급, 매출 정보를 조회합니다.
 
 매출 데이터 표시: 조회된 데이터를 표 형태로 웹 페이지에 표시하여 사용자가 쉽게 확인할 수 있도록 합니다.
