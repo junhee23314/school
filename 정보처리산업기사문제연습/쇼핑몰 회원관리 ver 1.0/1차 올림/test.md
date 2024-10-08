@@ -130,7 +130,51 @@ JavaScript를 사용하여 폼의 입력값을 검증하는 기능을 추가했�
 
 **`취소`버튼을 누르면 전체 초기화**
 
+### ---join_p.jsp---
+실제로 데이터베이스에 회원 정보를 삽입하는 코드입니다. insert 쿼리를 사용하여 데이터베이스에 회원 정보를 저장합니다.
+요청(request)으로 받은 데이터를 파라미터로 받아와서 해당 값을 데이터베이스에 입력합니다.
+삽입이 완료되면 member_list.jsp로 이동하여 회원 목록을 확인할 수 있도록 리디렉션합니다.
 
+```
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%@ page import ="DB.DBConnect" %> <%-- 지시문형식을 통해 DB연결 자바파일 불러오기  --%>
+<%@ page import = "java.sql.*" %>  <!-- 지시문형식을 통해 SQL 관련 라이브러리 불러오기  -->
+ 
+ <%
+          request.setCharacterEncoding("UTF-8"); // 오라클에 한글 입력 시 깨지지 않도록 셋팅
+ 
+          String sql = "insert into member_tbl_02 values(?,?,?,?,?,?,?)"; 
+          //sql 변수선언 후 쿼리문형태의 문자열 저장, 삽입쿼리문에 입력데이터 자리 7개 준비
+          
+          Connection conn = DBConnect.getConnection(); // DB 연결 기능을 객체변수 conn 에 저장 -> 1.DB연결
+          PreparedStatement pstmt = conn.prepareStatement(sql);  // sql변수에 저장되어 있는 문장이 쿼리문이 됨 ->2.DB연결 후 쿼리문이 생성
+          
+        //    화면으로부터 사용자가 입력한 회원정보 데이터 7개를 쿼리문 각 자리에 셋팅    //
+        
+          pstmt.setInt(1, Integer.parseInt(request.getParameter("custno")));
+          // 화면으로부터 읽어들인 데이터는 문자열이므로 숫자형으로 형변환 필요
+          pstmt.setString(2,request.getParameter("custname"));  
+          pstmt.setString(3, request.getParameter("phone"));
+      	  pstmt.setString(4, request.getParameter("address"));
+          pstmt.setString(5, request.getParameter("joindate"));
+      	  pstmt.setString(6, request.getParameter("grade"));
+      	  pstmt.setString(7, request.getParameter("city"));
+      	 
+      	  pstmt.executeUpdate();        // 쿼리문을 실행하고, 건별로 오라클 테이블에 누적
+  %>    
+```
+**회원등록하기전 member_tbl_02 테이블**
+![회원등록전](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%ED%9A%8C%EC%9B%90%EB%93%B1%EB%A1%9D%20%EC%A0%84.png)
+
+**회원등록!**
+![회원등록](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%ED%9A%8C%EC%9B%90%EB%93%B1%EB%A1%9D!.gif)
+
+**회원등록한 후 member_tbl_02 테이블**
+![회원등록후](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/%ED%9A%8C%EC%9B%90%EB%93%B1%EB%A1%9D%20%ED%9B%84.png)
+
+보이는 것 처럼 적었던 회원정보가 들어가 있는걸 볼수있습니다.
 
 </details>
 
