@@ -255,8 +255,13 @@ function checkDel(f_custno) {
         alert("삭제되었습니다.");
         location.href = "delete.jsp?d_custno=" + f_custno;
     } else {
-        진}
+}
 ```
+
+<details><summary>회원정보조회
+</summary>
+
+
 ### ---member_search.jsp---
 
 
