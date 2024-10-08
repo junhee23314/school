@@ -42,6 +42,11 @@ public class DBConnect {
 ---
 
 
+
+
+---
+
+
 <details><summary> 회원등록
 </summary>
 
@@ -255,43 +260,62 @@ function checkDel(f_custno) {
         alert("삭제되었습니다.");
         location.href = "delete.jsp?d_custno=" + f_custno;
     } else {
+        alert("삭제가 취소되었습니다.");
+    }
 }
+
 ```
 
-<details><summary>회원정보조회
-</summary>
+수정된 정보를 update_p.jsp로 전송하여 데이터베이스에 업데이트합니다.
 
+### ---update_p.jsp---
+
+파라미터 설정: 사용자가 입력한 정보를 기반으로 각 필드를 업데이트하기 위해 pstmt.setString() 메서드를 사용하여 값들을 설정합니다.
+
+업데이트 실행: pstmt.executeUpdate()를 호출하여 데이터베이스의 회원 정보를 실제로 업데이트합니다.
+
+페이지 전환: 업데이트가 완료된 후, member_list.jsp 페이지로 포워딩하여 업데이트된 회원 목록을 표시합니다.
+
+delete.jsp
+
+SQL 삭제 쿼리: member_tbl_02 테이블에서 특정 회원(custno)의 정보를 삭제하는 SQL 쿼리를 구성합니다. 삭제할 회원 번호는 요청 파라미터(d_custno)에서 가져옵니다.
+
+데이터베이스 연결: DBConnect 클래스를 통해 데이터베이스에 연결하고, PreparedStatement를 사용하여 SQL 쿼리를 안전하게 실행합니다.
+
+삭제 실행: pstmt.executeUpdate()를 호출하여 해당 회원 정보를 데이터베이스에서 삭제합니다.
+</details>
+
+
+
+<details><summary> 회원정보조회
+</summary>
 
 ### ---member_search.jsp---
 
 
 {동영상} <br>
 checkValue2() 자바스크립트 함수는 사용자가 회원 번호를 입력했는지 확인하고, 입력값이 없을 경우 경고 메시지를 표시하며 폼 제출을 막습니다.
-
 ```
-	<script type="text/javascript">
-    	function checkValue2() {
-        	if (!document.data1.in_custno.value) { // 회원 번호 입력값이 없을 경우
-            	alert("회원번호를 입력하세요."); // 경고 메시지
-            	document.data1.in_custno.focus(); // 입력창으로 포커스 이동
-            	return false; // 폼 제출 중단
-       	 }
-        	return true; // 입력값이 있으면 폼 제출 진행
-    	}
-	</script>
-	</head>
+<script type="text/javascript">
+    function checkValue2() {
+        if (!document.data1.in_custno.value) { // 회원 번호 입력값이 없을 경우
+            alert("회원번호를 입력하세요."); // 경고 메시지
+            document.data1.in_custno.focus(); // 입력창으로 포커스 이동
+            return false; // 폼 제출 중단
+        }
+        return true; // 입력값이 있으면 폼 제출 진행
+    }
+</script>
+</head>
 ```
 
 회원 번호가 입력되면, 입력값을 POST 방식으로 `member_search_list.jsp`로 전송합니다.
 `member_search_list.jsp`에서 해당 회원 번호에 대한 데이터를 조회하여 화면에 출력하게 됩니다.
 
-
-
 ### ---member_search_list.jsp---
 ![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%9A%8C%EC%9B%90%EA%B4%80%EB%A6%AC%20ver%201.0/1%EC%B0%A8%20%EC%98%AC%EB%A6%BC/img/member_search_list%20%ED%99%94%EB%A9%B4.png)
 
 ---
-
 request.getParameter("in_custno")를 통해 웹 요청에서 고객 번호(in_custno)를 가져옵니다.
 ```
  String in_custno = request.getParameter("in_custno");
