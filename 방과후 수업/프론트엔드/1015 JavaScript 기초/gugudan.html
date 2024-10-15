@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+</head>
+
+<body>
+    <script>
+        let 단;
+        while (true) {
+
+            단 = window.prompt("입력하시오!");
+            // 몇단이 0이면 멈춘다.
+            if (단 == 0) {
+                break;
+            }
+
+
+            document.write("<h2>" + 단 + " 단</h2>");
+            for (let i = 1; i <= 9; i++) {
+                document.write(단 + "X" + i + "=" + (단 * i) + "<br>")
+
+
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
