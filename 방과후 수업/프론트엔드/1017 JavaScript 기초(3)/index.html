@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인창</title>
+</head>
+
+<body>
+    <h2 style="color: rgb(26, 191, 80)">NAVER</h2>
+    <input type="text" id="아이디" placeholder="Username"> <br>
+    <input type="password" id="비밀번호" placeholder="Password"> <br>
+
+    <input type="button" value="Sign in" onclick="로그인()">
+
+    <script>
+        const 아이디 = "장이름";
+        const 비번 = 21203;
+
+        function 로그인() {
+            let 입력한아이디 = document.getElementById("아이디").value;
+            let 입력한비번 = document.getElementById("비밀번호").value;
+
+
+
+            if (아이디 == 입력한아이디) {
+                if (비번 == 입력한비번) {
+                    alert("로그인성공");
+                    window.location.href = "http://naver.com";
+                } else {
+                    alert("비밀번호를 확인하세요");
+                    window.location.reload();
+                }
+            } else {
+                alert("아이디를 확인하세요");
+                window.location.reload();
+            }
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
