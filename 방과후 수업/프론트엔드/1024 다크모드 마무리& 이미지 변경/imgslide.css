@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+* {
+    /* asterisk */
+    margin: 0 auto;
+    padding: 0;
+}
+
+.이미지상자 {
+    width: 640px;
+    height: 427px;
+}
+
+.버튼상자 {
+    width: 640px;
+    height: 50px;
+    background-color: #000;
+    text-align: center;
+}
+
+input {
+    width: 100px;
+    height: 30px;
+    line-height: 20px;
+    border-radius: 5px;
+}

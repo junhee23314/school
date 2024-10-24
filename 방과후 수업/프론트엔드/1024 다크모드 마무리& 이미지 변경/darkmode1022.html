@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>다크모드 만들기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="imgs/main_img.png" alt="main">
+
+            <div class="mode">
+                <label for="모드변경">다크모드변경</label>
+                <input type="checkbox" value="다크모드" id="모드변경">
+            </div>
+        </header>
+
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="imgs/logo.png" alt="로고">
+                </a>
+            </div>
+            <!-- ul>(li>a[href="#"])*3 -->
+            <!-- ul>li*3>a[href="#"] -->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">School</a></li>
+                <li><a href="#">Major</a></li>
+                <li><a href="#">Etc</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2><a href="#">Home</a></h2>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                Incidunt quibusdam iusto, alias est perferendis aut ipsa itaque<br>
+                numquam officia iste, explicabo velit. Optio,<br>
+                quod dignissimos praesentium consequuntur eaque ad ab!
+            </p>
+        </section>
+    </div>
+
+    <script>
+
+        let 체크상자 = document.getElementById("모드변경");
+        체크상자.addEventListener('change', function () {
+
+            if (체크상자.checked == true) {
+                // 체크되어있음
+                document.getElementsByTagName('nav')[0].style.backgroundColor = "black";
+                document.body.style.backgroundColor = "black";
+
+
+
+
+                let 리스트 = document.getElementsByTagName('li');
+                for (let i = 0; i <= 리스트.length; i++) {
+                    리스트[i].style.backgroundColor = "b";
+                    리스트[i].children[0].style.color = "gold";
+                    document.getElementsByTagName('section')[0].style.backgroundColor = "white"
+
+                }
+
+            } else {
+                // 체크안돼있음
+                document.getElementsByTagName('nav')[0].style.backgroundColor = "white";
+                document.body.style.backgroundColor = "white";
+                for (let i = 0; i <= 리스트.length; i++) {
+                    리스트[i].style.backgroundColor = "#dbddf7";
+
+                }
+            }
+
+
+        });
+
+
+    </script>
+</body>
+
+</html>
