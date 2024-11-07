@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333;
+    box-sizing: border-box;
+    font-family: 궁서체;
+}
+
+div{
+    margin: 0 auto;
+    width: 500px;
+    height: 44px;
+    line-height: 44px;
+    /* background-color: #333; */
+    border: 1px solid #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon{
+    width: 130px;
+    text-align: center;
+    /* margin: 0 auto; inline-block이기에 */
+    /* display: inline-block; */
+    /* background-color: #333; */
+}
+
+.genderBox ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width: 300px;
+    height: 30px;
+}
+
+input{
+    padding-left: 20px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked + label{
+    background-color: #000;
+    color: white;
+}
+
+.input label{
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 2px;
+    
+}
+
+.submitBox input{
+    /* display: block; */
+    margin: 0 auto;
+    width: 50%;
+    height: 80%;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
