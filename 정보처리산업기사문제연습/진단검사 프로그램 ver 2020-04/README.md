@@ -8,7 +8,8 @@
 ## 핵심코드
 
 #### 환자조회
-
+![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%A7%84%EB%8B%A8%EA%B2%80%EC%82%AC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20ver%202020-04/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-12-18%20020320.png)	
+    
     String sql="select p_no,p_name,substr(p_birth,1,4)||'년'||substr(p_birth,5,2)||'월'||substr(p_birth,7,2)||'일' as p_birth,"
 	+ " case p_gender when 'M' then '남' when 'F' then '여' end as p_gender,"
 	+ " p_tel1||'-'||p_tel2||'-'||p_tel3 as p_tel,"
