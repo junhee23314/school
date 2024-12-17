@@ -87,8 +87,9 @@
 
 > 만약 다시쓰기 버튼을 누를 경우 reset으로 해당 페이지 다시 실행시켜 지움.
 > 후에 첫 번째 focus().
+![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%A7%84%EB%8B%A8%EA%B2%80%EC%82%AC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20ver%202020-04/%ED%99%94%EB%A9%B4%20%EB%85%B9%ED%99%94%20%EC%A4%91%202024-12-18%20020354.gif)
 
-    <tr>
+ 		<tr>
 				<th>검사코드</th>
 				<td style="text-align: left;"><select name="t_name" >
 					<option value="" selected disabled>검사명</option>
@@ -159,7 +160,7 @@
 
 
 
-## 검사결과조
+## 검사결과조회
 ![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%A7%84%EB%8B%A8%EA%B2%80%EC%82%AC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20ver%202020-04/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-12-18%20042518.png)
 
     String sql= "select patient.p_no, patient.p_name,"
