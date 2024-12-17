@@ -5,9 +5,9 @@
 이 프로그램은 검가결과입력과 결과조회, 지역별검사건수를 확인할 수 있는 프로그램이다.
 
 
-## 핵심코드
+# 핵심코드
 
-#### 환자조회
+## 환자조회
 ![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%A7%84%EB%8B%A8%EA%B2%80%EC%82%AC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20ver%202020-04/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-12-18%20042147.png)
 	
     
@@ -58,7 +58,7 @@
  `getString('')` 메서드는 데이터베이스 열 값을 문자열로 반환.
  숫자(1~6)는 데이터베이스 쿼리에서 선택된 열의 순서를 나타남.
 
-#### 검사결과입력
+## 검사결과입력
 ![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%A7%84%EB%8B%A8%EA%B2%80%EC%82%AC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20ver%202020-04/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-12-18%20020320.png)
 
     function checkValue(){
@@ -159,7 +159,7 @@
 
 
 
-#### 검사결과조
+## 검사결과조
 ![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%A7%84%EB%8B%A8%EA%B2%80%EC%82%AC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20ver%202020-04/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-12-18%20042518.png)
 
     String sql= "select patient.p_no, patient.p_name,"
@@ -184,7 +184,7 @@
 > 두가지에 테이블을 연결시켜줌 (조인)
 
 
-#### (지역별)검사건수통계
+## (지역별)검사건수통계
 ![](https://github.com/junhee23314/school/blob/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EB%AC%B8%EC%A0%9C%EC%97%B0%EC%8A%B5/%EC%A7%84%EB%8B%A8%EA%B2%80%EC%82%AC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20ver%202020-04/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-12-18%20041631.png)
 
     String sql = "select tp.p_city,"
