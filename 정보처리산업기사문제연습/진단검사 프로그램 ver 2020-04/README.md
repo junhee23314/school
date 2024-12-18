@@ -206,11 +206,10 @@
 > count(tp.p_city) as p_city_count
 > 
 > from TBL_PATIENT_202004 tp,tbl_result_202004 tr where tp.p_no = tr.p_no group by p_city order by p_city asc;
-> 테이블 끼리 조인 
-
+> 테이블 끼리 조인, p_city를 카운트 해줌.
+>
 >group by p_city
 >데이터를 특정 열 p_city 값을 기준으로 그룹화
-> 
 > 
 >  order by p_city asc
 > ORDER BY는 오름차순으로 데이터를 정렬합니다.
