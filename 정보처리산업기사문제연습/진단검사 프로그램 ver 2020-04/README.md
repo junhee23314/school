@@ -203,15 +203,12 @@
 > case tp.p_city  when '10' then '서울'
 > when '20' then '경기' when '30' then '강원' when '40' then '대구' end as p_city_name
 > case문으로 정해진 코드에 맞는 지역명을 출력
-> count(tp.p_city) as p_city_count
-> 
-> from TBL_PATIENT_202004 tp,tbl_result_202004 tr where tp.p_no = tr.p_no group by p_city order by p_city asc;
-> 테이블 끼리 조인, p_city를 카운트 해줌.
 >
->group by p_city
->데이터를 특정 열 p_city 값을 기준으로 그룹화
-> 
->  order by p_city asc
+> count(tp.p_city) as p_city_count
+> p_city를 카운트 해줌.
+>
+> from TBL_PATIENT_202004 tp,tbl_result_202004 tr where tp.p_no = tr.p_no group by p_city order by p_city asc;
+> 테이블 조인, 데이터를 특정 열 p_city 값을 기준으로 그룹화,
 > ORDER BY는 오름차순으로 데이터를 정렬합니다.
 
 
