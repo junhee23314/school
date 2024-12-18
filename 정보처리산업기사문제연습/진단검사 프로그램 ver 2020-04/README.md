@@ -204,7 +204,7 @@
 > when '20' then '경기' when '30' then '강원' when '40' then '대구' end as p_city_name
 > case문으로 정해진 코드에 맞는 지역명을 출력
 > count(tp.p_city) as p_city_count
-> 지역별로 검사건수가 몇 개 있었는지를 count로 세준다.
+> 
 > from TBL_PATIENT_202004 tp,tbl_result_202004 tr where tp.p_no = tr.p_no group by 					p_city order by p_city asc;
 > 테이블 끼리 조인해주고 
 
