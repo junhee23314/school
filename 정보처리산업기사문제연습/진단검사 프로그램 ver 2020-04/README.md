@@ -109,7 +109,7 @@
 			<input type="radio"  name="t_status" value="2">검사완료
 		</td>
 
-> 해당 칸은 위에서 콤보박스와 라디오하는 방법이다. 콤보 박스 첫 번째 칸에서 selected disabled를 줌으로써 선택되어있고 비활성화을 시킴.
+> 콤보박스와 라디오하는 방법이다. 콤보 박스 첫 번째 칸에서 selected disabled를 줌으로써 선택되어있고 비활성화을 시킴.
 
 
 	/*상세 페이지*/
