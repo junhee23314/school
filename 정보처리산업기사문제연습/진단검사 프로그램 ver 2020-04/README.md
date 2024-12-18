@@ -205,8 +205,8 @@
 > case문으로 정해진 코드에 맞는 지역명을 출력
 > count(tp.p_city) as p_city_count
 > 
-> from TBL_PATIENT_202004 tp,tbl_result_202004 tr where tp.p_no = tr.p_no group by 					p_city order by p_city asc;
-> 테이블 끼리 조인해주고 
+> from TBL_PATIENT_202004 tp,tbl_result_202004 tr where tp.p_no = tr.p_no group by p_city order by p_city asc;
+> 테이블 끼리 조인 
 
 >group by p_city
 >데이터를 특정 열 p_city 값을 기준으로 그룹화
