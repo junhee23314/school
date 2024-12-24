@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="수험자 제공 파일/jQuery 오픈소스 파일/jquery-1.12.3.js"></script>
+    <script>
+        // $(선택자).함수
+        $(document).ready(function(){
+            setIntervel(function(){
+                $('.imgbox').animate({marginLeft: "0"});
+                $('.imgbox').delay(1200);
+
+                $('.imgbox').animate({marginLeft: "-100%"});
+                $('.imgbox').delay(1200);
+
+                $('.imgbox').animate({marginLeft: "-200%"});
+                $('.imgbox').delay(1200);
+
+            },2000)
+
+        })
+
+
+    </script>
+
+</head>
+<body>
+
+<div class="wrap">
+
+    <header></header>
+
+    <div class="contents"></div>
+    
+    
+    <div class="slide">
+        <div class="imgbox">
+            <img src="images/alexander-mils-Ui8rV4NmCLk-unsplash.jpg" alt="img1">
+            <img src="images/cherryblossom-15-TOvBDH5pY90-unsplash.jpg" alt="img2">
+            <img src="images/y-k--e6Xu27_T50-unsplash.jpg" alt="img3">
+        </div>
+    </div>
+    
+    
+
+
+
+</div>
+
+<footer></footer>
+
+
+</body>
+</html>

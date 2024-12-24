@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+*{
+    /* m0+p0+lisn */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.wrap{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 120px);
+}
+
+
+header{
+    width: 200px;
+    height:100%;
+    background-color: beige;
+}
+
+.contents{
+    width: 400px;
+    height:100%;
+    background-color: bisque;
+}
+
+.slide{
+    width: calc(100% - 200px - 400px);
+    height:100%;
+    background-color: blanchedalmond;
+    overflow: hidden;
+}
+
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: burlywood;
+}
+
+.imgbox{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.imgbox img{
+    width: 100%;
+    height: 100%;
+}
